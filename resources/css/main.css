@@ -88,6 +88,7 @@ aside {
     width: 36%;
     flex-direction: column;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     border-left: 1px solid #d8d8d8;
 }
 .info .info_block {
@@ -110,4 +111,36 @@ aside {
     flex-direction: column;
     justify-content: center;
     width: 60%;
+}
+/* ------- end of info ------- */
+
+/* ------- learning ------- */
+.learning {
+    background-color: #eaebec;
+    text-align: center;
+}
+.learning h2 {
+    padding-bottom: 2rem;
+}
+.learning_wrap {
+    padding: 2rem 4.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+.learning_items_wrap {
+    justify-content: space-between;
+}
+.learning_item {
+    flex-direction: column;
+    width: 32%;
+}
+.learning_item:first-child {
+    padding-bottom: 2rem;
+}
+.learning_item_img img {
+    width: 100%;
+}
+.learning_item_content {
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-align: left;
 }
