@@ -2,6 +2,31 @@
 html {
     font-size: 16px;
 }
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    padding: 1rem 0;
+}
+p, a {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.2;
+}
 body {
     background-color: #f3f5f5;
 }
@@ -15,6 +40,9 @@ body {
 .max_screen {
     max-width: 1200px;
     margin: 0 auto;
+}
+.info_block p {
+    padding: 1rem 0;
 }
 /* ------- end of common styles ------- */
 
@@ -71,6 +99,20 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+.slogan p {
+    padding: 1.75rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.slogan a {
+    display: block;
+    padding: 1rem 2rem;
+    width: 65%;
+    background-color: #4a4a4a;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
 /* ------- end of header ------- */
 
 /* ------- info ------- */
@@ -83,6 +125,17 @@ header {
 }
 .info article .info_img img {
     width: 100%;
+}
+.info h2 {
+    padding: 2rem 0;
+}
+.info article p, .thesis .video_block p {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding-bottom: 2rem;
+}
+.info p.author {
+    font-size: 1rem;
 }
 aside {
     width: 36%;
@@ -143,6 +196,9 @@ aside {
 .learning_item_content {
     padding: 1rem 1rem 1.5rem 1rem;
     text-align: left;
+}
+.learning_item {
+    font-family: 'Raleway', sans-serif;
 }
 /* ------- end of learning -------- */
 
