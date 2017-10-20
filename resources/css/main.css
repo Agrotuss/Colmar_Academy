@@ -34,16 +34,51 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.wrapper {
-    padding: 2rem 0 2rem 1.5rem;
+/* ------- blocks' structure ------- */
+.big_section {
+    padding: 2rem 1.5rem;
+    width: 60%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.frame {
+    width: 100%;
+}
+.frame img, .frame video {
+    width: 100%;
+    height: auto;
+}
+.small_section {
+    padding: 2rem 0;
+    width: 35%;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .max_screen {
     max-width: 1200px;
     margin: 0 auto;
 }
+.info_block {
+    padding: 1rem 0 1rem 1rem;
+    border-bottom: 1px solid #d8d8d8;
+}
 .info_block p {
     padding: 1rem 0;
 }
+.info_block .frame {
+    width: 35%;
+    margin-right: 1rem;
+}
+.info_block .frame img {
+    width: 100%;
+}
+
+.info_block_content {
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+/* ------- end of blocks' structure ------- */
 /* ------- end of common styles ------- */
 
 /* ------- nav ------- */
@@ -86,25 +121,16 @@ nav {
 header {
     background-color: #d8d8d8;
 }
-.banner {
-    width: 60%;
-    margin-right: 1.5rem;
-}
-.banner img {
-    width: 100%;
-}
-.slogan {
+header .small_section {
     color: #4a4a4a;
-    width: 35%;
-    flex-direction: column;
     justify-content: center;
 }
-.slogan p {
+header .small_section p {
     padding: 1.75rem 0;
     font-size: 1.5rem;
     font-weight: 700;
 }
-.slogan a {
+header .small_section a {
     display: block;
     padding: 1rem 2rem;
     width: 65%;
@@ -119,34 +145,19 @@ header {
 .info {
     justify-content: space-between;
 }
-.info article {
-    flex-direction: column;
-    width: 59%;
-}
-.info article .info_img img {
-    width: 100%;
-}
 .info h2 {
     padding: 2rem 0;
 }
-.info article p, .thesis .video_block p {
+.info .big_section p, .thesis .big_section p {
     font-size: 1.2rem;
     line-height: 1.4;
     padding-bottom: 2rem;
 }
-.info p.author {
+.info .big_section p.author {
     font-size: 1rem;
 }
-aside {
-    width: 36%;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.info .small_section {
     border-left: 1px solid #d8d8d8;
-}
-.info .info_block {
-    padding: 1rem 0 1rem 1rem;
-    border-bottom: 1px solid #d8d8d8;
 }
 .info .info_block:last-child {
     background-color: #d8d8d8;
@@ -155,101 +166,65 @@ aside {
 .info .info_block:first-child {
     padding-top: 0;
 }
-.info .info_block img {
-    width: 35%;
-    height: 100%;
-    margin-right: 1rem;
-}
-.info_block .info_block_content {
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-}
 /* ------- end of info ------- */
 
-/* ------- learning ------- */
-.learning {
+/* ------- courses ------- */
+.courses {
     background-color: #eaebec;
     text-align: center;
 }
-.learning h2 {
-    padding-bottom: 2rem;
-}
-.learning_wrap {
+.courses_wrap {
     padding: 2rem 4.5rem;
     flex-direction: column;
     align-items: center;
 }
-.learning_items_wrap {
+.courses_items_wrap {
     justify-content: space-between;
 }
-.learning_item {
+.courses_item {
     flex-direction: column;
     width: 32%;
+    background-color: #fff;
+    margin-top: 2rem;
 }
-.learning_item:first-child {
-    padding-bottom: 2rem;
-}
-.learning_item_img img {
+.courses_item_img img {
     width: 100%;
 }
-.learning_item_content {
+.courses_item_content {
     padding: 1rem 1rem 1.5rem 1rem;
     text-align: left;
 }
-.learning_item {
+.courses_item {
     font-family: 'Raleway', sans-serif;
 }
-/* ------- end of learning -------- */
+/* ------- end of courses -------- */
 
 /* ------- thesis ------- */
 .thesis {
     background-color: #f3f5f5;
     text-align: center;
 }
-.thesis .wrapper {
-    justify-content: space-between;
-}
 .thesis h2 {
     padding-top: 2rem;
 }
-.thesis .video_block {
-    width: 60%;
+.thesis .big_section {
     text-align: left;
 }
-.thesis .video_block h3 {
+.thesis .big_section h2 {
     padding: 1.5rem 0 .5rem 0;
 }
-.thesis .video_block p {
+.thesis .big_section p {
     padding-bottom: 2rem;
 }
-.thesis .video_block video {
+.thesis .big_section video {
     width: 100%;
     height: auto;
-}
-.thesis aside {
-    width: 38%;
-    margin-left: 1rem;
-    padding: 0;
-    border: none;
-}
-.thesis .info_block {
-    padding: 1rem 0 1rem 1rem;
 }
 .thesis .info_block:first-child {
     background-color: #d8d8d8;
 }
-.thesis .info_img {
-    width: 35%;
-}
-.thesis .info_block img {
-    width: 100%;
-}
-.thesis .info_block_content {
-    width: 61%;
-    align-items: flex-start;
-    text-align: left;
-    padding-left: 1rem;
+.thesis .info_block:last-child {
+    border: none;
 }
 /* ------- end of thesis ------- */
 
@@ -265,6 +240,5 @@ footer ul li {
     padding-left: 1rem;
 }
 footer ul li a {
-    text-decoration: none;
     color: #4a4a4a;
 }

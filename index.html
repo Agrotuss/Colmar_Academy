@@ -27,36 +27,36 @@
     <!-- main content -->
     <main>
         <!-- header -->
-        <header class="max_screen">
-            <div class="wrapper flex">
-                <div class="banner">
+        <header class="max_screen flex">
+            <div class="big_section flex">
+                <div class="frame">
                     <img src="./resources/img/banner.jpg" alt="Banner">
-                </div><!-- /.banner -->
-                <div class="slogan flex">
-                    <h1>Learn something new everyday</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <a href="#">Start here</a>
-                </div><!-- /.slogan -->
-            </div><!-- /.wrapper -->
-        </header>
+                </div><!-- /.frame -->
+            </div><!-- /.big_section -->
+            <div class="small_section flex">
+                <h1>Learn something new everyday</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#">Start here</a>
+            </div><!-- /.small_section -->
+        </header><!-- /.header -->
         <!-- info -->
         <div class="info max_screen flex">
-                <article class="wrapper flex">
-                    <div class="info_img">
+                <div class="big_section flex">
+                    <div class="frame">
                         <img src="./resources/img/information-main.jpg" alt="background image">
-                    </div>
+                    </div><!-- ./frame -->
                     <h2>It dosn't hurt keep practicing</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque commodi ea eveniet
                         laudantium nisi non recusandae vel voluptatem voluptatum? Alias beatae culpa dolorum eos
                         exercitationem molestias quidem quis saepe!
                     </p>
                     <p class="author">Emanuel, Sr Strategist at Hiring.com</p>
-                </article>
-                <aside class="flex">
+                </div><!-- /.big_section -->
+                <div class="small_section flex">
                     <div class="info_block flex">
-                        <img src="./resources/img/information-orientation.jpg" alt="Orientation date">
+                        <div class="frame">
+                            <img src="./resources/img/information-orientation.jpg" alt="Orientation date">
+                        </div><!-- /.frame -->
                         <div class="info_block_content flex">
                             <h3>Orientation date</h3>
                             <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
@@ -64,7 +64,9 @@
                         </div><!-- /.info_block_content -->
                     </div><!-- /.info_block -->
                     <div class="info_block flex">
-                        <img src="./resources/img/information-campus.jpg" alt="Our campus">
+                        <div class="frame">
+                            <img src="./resources/img/information-campus.jpg" alt="Our campus">
+                        </div><!-- /.frame -->
                         <div class="info_block_content flex">
                             <h3>Our campus</h3>
                             <p>Find which campus is close by you</p>
@@ -72,75 +74,77 @@
                         </div>
                     </div><!-- /.info_block -->
                     <div class="info_block flex">
-                        <img src="./resources/img/information-guest-lecture.jpg" alt="Our guest lecture">
+                        <div class="frame">
+                            <img src="./resources/img/information-guest-lecture.jpg" alt="Our guest lecture">
+                        </div><!-- /.frame -->
                         <div class="info_block_content flex">
                             <h3>Our guest lecture</h3>
                             <p>Join a keynote with Oliver Sack about music in medical treatment</p>
                             <a href="#">Read more</a>
                         </div>
                     </div><!-- /.info_block -->
-                </aside>
+                </div><!-- /.small_section -->
         </div><!-- /.info -->
-        <!-- learning -->
-        <div class="learning max_screen">
-            <div class="learning_wrap">
+        <!-- courses -->
+        <div class="courses max_screen">
+            <div class="courses_wrap">
                 <h2>Start learning</h2>
-                <div class="learning_items_wrap flex">
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                <div class="courses_items_wrap flex">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-software.jpg" alt="Software engineering">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Software engineering</h3>
                             <h4>COURSES</h4>
                             <p>Web Development, Mobile Development, iOT, APIs</p>
                         </div>
                     </div>
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-computer-art.jpg" alt="Computer art">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Computer art</h3>
                             <h4>COURSES</h4>
                             <p>Imagin &amp; Design, Web Design, Motion Graphic &amp; Visual Effects, Computer Animation</p>
                         </div>
                     </div>
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-design.jpg" alt="Software engineering">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Design</h3>
                             <h4>COURSES</h4>
                             <p>User Experience Design, User Research, Visual Design</p>
                         </div>
                     </div>
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-data.jpg" alt="Data">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Data</h3>
                             <h4>COURSES</h4>
                             <p>Data Science, Big Data, Data Visualization</p>
                         </div>
                     </div>
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-business.jpg" alt="Business">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Business</h3>
                             <h4>COURSES</h4>
                             <p>Product  Development, Business Development, Startup</p>
                         </div>
                     </div>
-                    <div class="learning_item flex">
-                        <div class="learning_item_img">
+                    <div class="courses_item flex">
+                        <div class="courses_item_img">
                             <img src="./resources/img/course-marketing.jpg" alt="Marketing">
                         </div>
-                        <div class="learning_item_content">
+                        <div class="courses_item_content">
                             <h3>Marketing</h3>
                             <h4>COURSES</h4>
                             <p>Analytics, Content Marketing, Mobile Marketing</p>
@@ -148,20 +152,23 @@
                     </div>
                 </div>
             </div>
-        </div><!-- /.learning -->
+        </div><!-- /.courses -->
+        <!-- thesis -->
         <div class="thesis max_screen">
             <h2>Thesis exhibit</h2>
-            <div class="wrapper flex">
-                <div class="video_block">
-                    <video src="./resources/video/thesis.mp4" controls>Sorry, video can't be played!</video>
-                    <h3>Reimagine urban</h3>
+            <div class="thesis_wrap flex">
+                <div class="big_section flex">
+                    <div class="frame">
+                        <video src="./resources/video/thesis.mp4" controls>Sorry, video can't be played!</video>
+                    </div>
+                    <h2>Reimagine urban</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam autem beatae commodi
                         corporis deleniti earum eius est, expedita facere fugit hic nisi obcaecati omnis possimus quas
                         qui, quo veritatis?</p>
-                </div>
-                <aside class="flex">
+                </div><!-- /.big_section -->
+                <div class="small_section flex">
                     <div class="info_block flex">
-                        <div class="info_img">
+                        <div class="frame">
                             <img src="./resources/img/thesis-fisma.jpg" alt="Fisma">
                         </div>
                         <div class="info_block_content flex">
@@ -170,7 +177,7 @@
                         </div><!-- /.info_block_content -->
                     </div><!-- /.info_block -->
                     <div class="info_block flex">
-                        <div class="info_img">
+                        <div class="frame">
                             <img src="./resources/img/thesis-now-and-then.jpg" alt="New York">
                         </div>
                         <div class="info_block_content flex">
@@ -178,9 +185,10 @@
                             <p>Research study about New York</p>
                         </div><!-- /.info_block_content -->
                     </div><!-- /.info_block -->
-                </aside>
-            </div>
+                </div><!-- /.small_section -->
+            </div><!-- /.thesis_wrap -->
         </div><!-- /.thesis -->
+        <!-- footer -->
         <footer class="max_screen">
             <div class="footer_wrapper flex">
                 <p>&copy; 2016 Colmar Academy. All rights reserved</p>
