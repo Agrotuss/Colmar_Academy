@@ -35,6 +35,10 @@ body {
     flex-wrap: wrap;
 }
 /* ------- blocks' structure ------- */
+.max_screen {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .big_section {
     padding: 2rem 1.5rem;
     width: 60%;
@@ -53,10 +57,6 @@ body {
     width: 35%;
     flex-direction: column;
     justify-content: flex-start;
-}
-.max_screen {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .info_block {
     padding: 1rem 0 1rem 1rem;
@@ -131,7 +131,7 @@ header .small_section p {
     font-weight: 700;
 }
 header .small_section a {
-    display: block;
+    display: inline-block;
     padding: 1rem 2rem;
     width: 65%;
     background-color: #4a4a4a;
@@ -241,4 +241,42 @@ footer ul li {
 }
 footer ul li a {
     color: #4a4a4a;
+}
+/* ------- end of footer ------- */
+
+/* ------- media queries ------- */
+@media only screen and (max-width: 1200px) {
+    .max_screen{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .big_section, .small_section{
+        width: 100%;
+    }
+    .small_section {
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+        padding: 0;
+        border-top: 1px solid #d8d8d8;
+    }
+    header .small_section a {
+        width: 35%;
+        margin: 0 auto;
+    }
+    .info_block {
+        width: 30%;
+        justify-content: center;
+    }
+    .info .info_block:first-child {
+        padding-top: 1rem;
+    }
+    .info_block .frame {
+        width: 60%;
+        margin: 0;
+    }
+    .info_block_content {
+        justify-content: space-between;
+    }
 }
