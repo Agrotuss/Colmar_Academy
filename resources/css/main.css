@@ -132,6 +132,7 @@ header {
 header .small_section {
     color: #4a4a4a;
     justify-content: center;
+    text-align: center;
 }
 header .small_section p {
     padding: 1.75rem 0;
@@ -259,7 +260,7 @@ footer ul li a {
     }
 }
 @media only screen and (max-width: 1000px) {
-    .big_section, .small_section{
+    .big_section, .small_section {
         width: 100%;
     }
     .big_section {
@@ -268,11 +269,11 @@ footer ul li a {
     .info .big_section .ruler {
         padding: 0 1rem;
     }
-    .small_section {
+    .info .small_section {
         justify-content: center;
         text-align: center;
         flex-direction: row;
-        padding: 0 1rem 1.5rem 1rem;
+        padding: 0 0 1.5rem 0;
         border-top: 1px solid #d8d8d8;
     }
     header .small_section a {
@@ -305,17 +306,21 @@ footer ul li a {
         padding-top: 1rem;
         width: 75rem;
     }
+    .thesis h2 {
+        padding: 1.5rem 1rem .5rem 1rem;
+    }
     .thesis .big_section h2 {
         padding: 1.5rem 1rem .5rem 1rem;
     }
     .thesis .big_section p {
         padding: 0 1rem 2rem 1rem;
     }
+    .thesis .small_section {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
 @media screen and (max-width: 790px) {
-    .small_section {
-        padding: 2rem;
-    }
     .main_nav li {
         margin: 0;
     }
@@ -346,8 +351,12 @@ footer ul li a {
     .logo h2 {
         display: none;
     }
+    header .small_section {
+        padding: 1rem 1.5rem;
+    }
     header .small_section a {
         width: 100%;
+        padding: 1rem 0;
     }
     .main_nav li:nth-child(2) {
         margin: 0 5rem;
@@ -387,9 +396,6 @@ footer ul li a {
     .courses h2 {
         padding-bottom: .5rem;
     }
-    .thesis .small_section {
-        display: none;
-    }
     .courses_item_img,
     .courses_item_content h4,
     .courses_item_content p {
@@ -409,6 +415,9 @@ footer ul li a {
     }
     .thesis .big_section {
         padding-bottom: 1.5rem;
+    }
+    .thesis .small_section {
+        display: none;
     }
     footer {
         border-top: none;
