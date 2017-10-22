@@ -5,6 +5,7 @@ html {
 h1, h2, h3 {
     font-family: 'Lora', serif;
     font-weight: 700;
+    color: #426e86;
 }
 h1 {
     font-size: 2.5rem;
@@ -30,6 +31,7 @@ p {
 body {
     background-color: #f3f5f5;
     min-width: 380px;
+    color: #2f3131;
 }
 .flex {
     display: flex;
@@ -57,11 +59,12 @@ body {
     padding: 2rem 0;
     width: 35%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .info_block {
     padding: 1rem 0 1rem 1rem;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid #fdba32;
     justify-content: flex-start;
 }
 .info_block p {
@@ -80,7 +83,7 @@ body {
 
 .info_block_content {
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     width: 60%;
 }
 /* ------- end of blocks' structure ------- */
@@ -90,8 +93,10 @@ body {
 nav {
     height: 64px;
     align-items: center;
-    color: #b5b5b5;
-    background-color: #fff;
+    color: #f8f1e5;
+    background-color: #fdba32;
+    width: 100%;
+    margin: 0 auto;
 }
 .nav_container {
     padding: 0 2rem;
@@ -108,17 +113,32 @@ nav {
 }
 .logo h2 {
     text-transform: uppercase;
+    color: #f8f1e5;
 }
 .logo span {
     font-weight: bold;
-    color: #4a4a4a;
+    color: #426e86;
 }
 .main_nav li {
-    margin-left: 1rem;
+    border-radius: 1rem;
+    transition: all .5s;
+    margin-left: .5rem;
 }
 .main_nav li a {
+    display: block;
+    padding: .5rem .75rem;
     text-decoration: none;
-    color: #4a4a4a;
+    color: #426e86;
+    transition: all .5s;
+}
+.main_nav li a:hover {
+    color: #fff;
+}
+.main_nav li:hover {
+    background-color: #426e86;
+}
+.main_nav li:active {
+    background-color: #28b31a;
 }
 .main_nav .icons {
     display: none;
@@ -127,28 +147,39 @@ nav {
 
 /* ------- header ------- */
 header {
-    background-color: #d8d8d8;
+    background-color: #f8f1e5;
+}
+header h1 {
+    color: #426e86;
 }
 header .small_section {
-    color: #4a4a4a;
     justify-content: center;
     text-align: center;
 }
 header .small_section p {
     padding: 1.75rem 0;
     font-size: 1.5rem;
-    font-weight: 700;
 }
 header .small_section a {
     display: inline-block;
     padding: 1rem 2rem;
     width: 65%;
-    background-color: #4a4a4a;
+    background-color: #107607;
+    box-shadow: 2px 2px 4px rgba(0,0,0,.5);
     font-size: 1.5rem;
+    font-weight: 700;
     color: #fff;
     text-align: center;
+    border-radius: .7rem;
+    transition: background-color .5s, box-shadow .3s;
 }
-/* ------- end of header ------- */
+header .small_section a:hover {
+    background-color: #2ac01b;
+}
+header .small_section a:active {
+    box-shadow: none;
+}
+    /* ------- end of header ------- */
 
 /* ------- info ------- */
 .info {
@@ -166,10 +197,11 @@ header .small_section a {
     font-size: 1rem;
 }
 .info .small_section {
-    border-left: 1px solid #d8d8d8;
+    border-left: 1px solid #fdba32;
+    justify-content: flex-start;
 }
 .info .info_block:last-child {
-    background-color: #d8d8d8;
+    background-color: #f8f1e5;
     border-bottom: none;
 }
 .info .info_block:first-child {
@@ -179,8 +211,13 @@ header .small_section a {
 
 /* ------- courses ------- */
 .courses {
-    background-color: #eaebec;
+    background-color: #fdba32;
     text-align: center;
+}
+.courses h2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+    font-size: 2rem;
 }
 .courses_wrap {
     padding: 2rem 4.5rem;
@@ -193,7 +230,7 @@ header .small_section a {
 .courses_item {
     flex-direction: column;
     width: 32%;
-    background-color: #fff;
+    background-color: #f8f1e5;
     margin-top: 2rem;
 }
 .courses_item_img img {
@@ -229,8 +266,14 @@ header .small_section a {
     width: 100%;
     height: auto;
 }
+.thesis .small_section {
+    justify-content: flex-start;
+}
+.thesis .info_block_content {
+    justify-content: center;
+}
 .thesis .info_block:first-child {
-    background-color: #d8d8d8;
+    background-color: #f8f1e5;
 }
 .thesis .info_block:last-child {
     border: none;
@@ -239,7 +282,7 @@ header .small_section a {
 
 /* ------- footer ------- */
 footer {
-    border-top: 1px solid #d8d8d8;
+    border-top: 1px solid #fdba32;
 }
 .footer_wrapper {
     padding: 1rem 1.5rem 2rem 1.5rem;
@@ -274,7 +317,10 @@ footer ul li a {
         text-align: center;
         flex-direction: row;
         padding: 0 0 1.5rem 0;
-        border-top: 1px solid #d8d8d8;
+        border-top: 1px solid #fdba32;
+    }
+    .info_block .ruler {
+        padding: 0 .5rem;
     }
     header .small_section a {
         width: 35%;
@@ -376,7 +422,12 @@ footer ul li a {
     }
     .info .info_block_content {
         text-align: left;
-        padding: 1rem 0 2rem 1rem;
+        padding: 1rem 0 2rem 0;
+        justify-content: flex-start;
+    }
+    .info_block .ruler {
+        padding: 0;
+        margin-bottom: 1.5rem;
     }
     .info .info_block:last-child {
         background: none;
@@ -407,7 +458,7 @@ footer ul li a {
     .courses_item {
         width: 100%;
         margin-top: .5rem;
-        background-color: #d8d8d8;
+        background-color: #f8f1e5;
         padding: 1rem 0 1rem 1rem;
     }
     .thesis h2 {
