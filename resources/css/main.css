@@ -65,7 +65,7 @@ body {
     justify-content: flex-start;
 }
 .info_block p {
-    padding: 1rem 0;
+    padding-top: 1rem;
 }
 .info_block .frame {
     width: 35%;
@@ -88,7 +88,7 @@ body {
 
 /* ------- nav ------- */
 nav {
-    height: 4rem;
+    height: 64px;
     align-items: center;
     color: #b5b5b5;
     background-color: #fff;
@@ -262,16 +262,25 @@ footer ul li a {
     .big_section, .small_section{
         width: 100%;
     }
+    .big_section {
+        padding: 0 0 1rem 0;
+    }
+    .info .big_section .ruler {
+        padding: 0 1rem;
+    }
     .small_section {
         justify-content: center;
         text-align: center;
         flex-direction: row;
-        padding: 0 0 1rem 0;
+        padding: 0 1rem 1.5rem 1rem;
         border-top: 1px solid #d8d8d8;
     }
     header .small_section a {
         width: 35%;
         margin: 0 auto;
+    }
+    header .small_section p {
+        padding: 1.2rem 0;
     }
     .info_block {
         width: 30%;
@@ -291,14 +300,21 @@ footer ul li a {
         margin: 0;
     }
     .info_block_content {
-        justify-content: flex-start;
+        height: 7rem;
+        justify-content: space-between;
         padding-top: 1rem;
         width: 75rem;
     }
+    .thesis .big_section h2 {
+        padding: 1.5rem 1rem .5rem 1rem;
+    }
+    .thesis .big_section p {
+        padding: 0 1rem 2rem 1rem;
+    }
 }
 @media screen and (max-width: 790px) {
-    .big_section, .small_section {
-        padding: 1rem;
+    .small_section {
+        padding: 2rem;
     }
     .main_nav li {
         margin: 0;
@@ -320,18 +336,21 @@ footer ul li a {
         height: 100%;
     }
     .courses_wrap {
-        padding: 2rem;
+        padding: 1rem 2rem;
     }
     .courses_item {
         width: 48%;
     }
 }
 @media only screen and (max-width: 670px) {
-    .main_nav li:nth-child(2) {
-        margin: 0 5rem;
-    }
     .logo h2 {
         display: none;
+    }
+    header .small_section a {
+        width: 100%;
+    }
+    .main_nav li:nth-child(2) {
+        margin: 0 5rem;
     }
     .info .big_section {
         display: none;
@@ -365,12 +384,11 @@ footer ul li a {
         width: 100%;
         height: auto;
     }
+    .courses h2 {
+        padding-bottom: .5rem;
+    }
     .thesis .small_section {
         display: none;
-    }
-    header .small_section a {
-        width: 90%;
-        margin: 0 auto;
     }
     .courses_item_img,
     .courses_item_content h4,
@@ -384,7 +402,10 @@ footer ul li a {
         width: 100%;
         margin-top: .5rem;
         background-color: #d8d8d8;
-        padding: 1rem 0 1.5rem 1rem;
+        padding: 1rem 0 1rem 1rem;
+    }
+    .thesis h2 {
+        padding: 1rem 0 .5rem 0;
     }
     .thesis .big_section {
         padding-bottom: 1.5rem;
