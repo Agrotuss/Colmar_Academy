@@ -207,6 +207,13 @@ header .small_section a:active {
 .info .info_block:first-child {
     padding-top: 0;
 }
+.info .info_block_content a {
+    color: #20948b;
+    transition: all .4s;
+}
+.info .info_block_content a:hover {
+    color: #107607;
+}
 /* ------- end of info ------- */
 
 /* ------- courses ------- */
@@ -232,6 +239,9 @@ header .small_section a:active {
     width: 32%;
     background-color: #f8f1e5;
     margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 3px 3px 4px rgba(0,0,0,.3);
+    transition: box-shadow .4s;
 }
 .courses_item_img img {
     width: 100%;
@@ -239,9 +249,6 @@ header .small_section a:active {
 .courses_item_content {
     padding: 1rem 1rem 1.5rem 1rem;
     text-align: left;
-}
-.courses_item {
-    font-family: 'Raleway', sans-serif;
 }
 /* ------- end of courses -------- */
 
@@ -293,6 +300,9 @@ footer ul li {
 }
 footer ul li a {
     color: #4a4a4a;
+}
+footer ul li a:hover {
+    text-decoration: underline;
 }
 /* ------- end of footer ------- */
 
@@ -371,7 +381,7 @@ footer ul li a {
         margin: 0;
     }
     .main_nav li:nth-child(2) {
-        margin: 0 4rem;
+        margin: 0 3rem;
     }
     .main_nav .a_text {
         display: none;
@@ -424,6 +434,7 @@ footer ul li a {
         text-align: left;
         padding: 1rem 0 2rem 0;
         justify-content: flex-start;
+        height: auto;
     }
     .info_block .ruler {
         padding: 0;
@@ -470,9 +481,6 @@ footer ul li a {
     .thesis .small_section {
         display: none;
     }
-    footer {
-        border-top: none;
-    }
     .footer_wrapper {
         padding: 1rem;
     }
@@ -480,5 +488,9 @@ footer ul li a {
         display: none;
     }
 }
-
+@media only screen and (max-width: 500px){
+    .main_nav li:nth-child(2) {
+        margin: 0 2rem;
+    }
+}
 
