@@ -11,21 +11,22 @@
 </head>
 <body>
     <nav class="max_screen flex">
-        <div class="nav_container flex max_screen">
+        <div class="logo_container flex max_screen">
             <div class="logo flex">
                 <img src="./resources/img/ic-logo.svg" alt="Colmar Academy">
                 <h2><span>Colmar</span>Academy</h2>
             </div>
-            <div class="main_nav">
-                <ul class="flex">
-                    <li><a href="#"><span class="icons"><img src="./resources/img/ic-on-campus.svg" alt="On campus" title="On campus"></span><span class="a_text">On campus</span></a></li>
-                    <li><a href="#"><span class="icons"><img src="./resources/img/ic-online.svg" alt="Online" title="Online"></span><span class="a_text">Online</span></a></li>
-                    <li><a href="#"><span class="a_text">For companies</span></a></li>
-                    <li><a href="#"><span class="icons"><img src="./resources/img/ic-login.svg" alt="Sign in" title="Sign in"></span><span class="a_text">Sign in</span></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav><!-- /nav -->
+        </div><!-- /.nav_container-->
+    </nav><!-- end of nav -->
+
+    <div class="main_nav max_screen flex"><!-- only ul>li supposed to be fixed, not the entire top bar -->
+        <ul class="flex">
+            <li><a href="#"><span class="icons"><img src="./resources/img/ic-on-campus.svg" alt="On campus" title="On campus"></span><span class="a_text">On campus</span></a></li>
+            <li><a href="#"><span class="icons"><img src="./resources/img/ic-online.svg" alt="Online" title="Online"></span><span class="a_text">Online</span></a></li>
+            <li class="switch_off"><a href="#"><span class="a_text">For companies</span></a></li>
+            <li><a href="#"><span class="icons"><img src="./resources/img/ic-login.svg" alt="Sign in" title="Sign in"></span><span class="a_text">Sign in</span></a></li>
+        </ul>
+    </div><!-- /.main_nav -->
     <!-- main content -->
     <main>
         <!-- header -->

@@ -98,15 +98,10 @@ nav {
     width: 100%;
     margin: 0 auto;
 }
-.nav_container {
+.logo_container {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%,50%);
 }
 .logo {
     align-items: center;
@@ -128,19 +123,36 @@ nav {
     color: #426e86;
 }
 .main_nav {
-    padding-right: 1rem;
+    position: fixed;
+    z-index: 20;
+    height: 64px;
+    width: 100%;
+    left: 50%;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translate(-50%,-100%);
+}
+.main_nav ul {
+    padding-right: 1.5rem;
 }
 .main_nav li {
+    border: 2px solid #f8f1e5;
     border-radius: 1rem;
     transition: all .5s;
     margin-left: .5rem;
     display: block;
-    padding: .5rem .75rem;
+    padding: .5rem;
     text-decoration: none;
     color: #426e86;
-    transition: all .5s;
     background-color: #fdba32;
-    border-radius: 1rem;
+}
+.main_nav li:hover {
+    background-color: #426e86;
+}
+.main_nav li a {
+    color: #426e86;
+    font-weight: bold;
+    transition: all .5s;
 }
 .main_nav li a:hover {
     color: #fff;
@@ -160,6 +172,7 @@ main {
 /* ------- header ------- */
 header {
     background-color: #f8f1e5;
+    border-bottom: 1px solid #fdba32;
 }
 header h1 {
     color: #426e86;
@@ -187,6 +200,7 @@ header .small_section a {
 }
 header .small_section a:hover {
     background-color: #2ac01b;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 header .small_section a:active {
     box-shadow: none;
@@ -288,6 +302,9 @@ header .small_section a:active {
 .thesis .small_section {
     justify-content: flex-start;
 }
+.thesis .info_block {
+    border-left: 1px solid #fdba32;
+}
 .thesis .info_block_content {
     justify-content: center;
 }
@@ -331,6 +348,9 @@ footer ul li a:hover {
     .big_section {
         padding: 0 0 1rem 0;
     }
+    header {
+        border: none;
+    }
     .info .big_section .ruler {
         padding: 0 1rem;
     }
@@ -339,7 +359,8 @@ footer ul li a:hover {
         text-align: center;
         flex-direction: row;
         padding: 0 0 1.5rem 0;
-        border-top: 1px solid #fdba32;
+        border: none/*1px solid #fdba32*/;
+
     }
     .info_block .ruler {
         padding: 0 .5rem;
@@ -387,6 +408,9 @@ footer ul li a:hover {
         flex-direction: row;
         justify-content: center;
     }
+    .thesis .info_block {
+        border: none;
+    }
 }
 @media screen and (max-width: 790px) {
     .nav_container {
@@ -398,7 +422,7 @@ footer ul li a:hover {
     .main_nav li:nth-child(2) {
         margin: 0 3rem;
     }
-    .main_nav .a_text {
+    .main_nav .a_text, .main_nav .switch_off {
         display: none;
     }
     .main_nav .icons {
